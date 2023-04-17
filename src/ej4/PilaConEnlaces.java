@@ -39,14 +39,12 @@ public class PilaConEnlaces<E> implements Stack<E>{
 
 	public E pop() throws EmptyStackException {
 		Nodo<E> aux = head;
-		
 		if(isEmpty())throw new EmptyStackException();
 		else {
 			head = head.getSiguente();
 			tamanio--;
 			
 		}
-		
 		return aux.getElemento();
 	}
 
